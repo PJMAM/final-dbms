@@ -26,7 +26,7 @@ namespace ProjFinally
             InitializeComponent();
         }
 
-        string strConnectionString = "Data Source=DESKTOP-QEN4LJI\\SQL_SERVER_PJ;" +
+        string strConnectionString = "Data Source=(local);" +
             "Initial Catalog=QuanLyCuaHangMyPham;" +
             "Integrated Security=True";
         SqlConnection myConn = null;

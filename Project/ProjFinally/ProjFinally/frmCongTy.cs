@@ -25,7 +25,7 @@ namespace ProjFinally
         }
 
         SqlConnection myConn = null;
-        string strConnectionString = "Data Source=DESKTOP-QEN4LJI\\SQL_SERVER_PJ;Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
+        string strConnectionString = "Data Source=(local);Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
 
         private void frmCongTy_Load(object sender, EventArgs e)
         {

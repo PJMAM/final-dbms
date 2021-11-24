@@ -31,7 +31,7 @@ namespace ProjFinally
         }
 
      
-        string strConnectionString = "Data Source=DESKTOP-QEN4LJI\\SQL_SERVER_PJ;Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
+        string strConnectionString = "Data Source=(local);Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
 
 
         private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -152,6 +152,12 @@ namespace ProjFinally
         private void btnReLoad_Click(object sender, EventArgs e)
         {
             LoadDataKhachHang();
+        }
+
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+            Form fm = new frmLichSuMuaHang();
+            fm.Show();
         }
 
         private void LoadDataKhachHang()

@@ -15,7 +15,7 @@ namespace ProjFinally
         SqlDataAdapter adp;
         public static SqlConnection GetConnection(string user,string pass)
         {
-            string connString = @"Data Source=.\SQLEXPRESS" + ";Initial Catalog=QuanLyCuaHangMyPham4"
+            string connString = @"Data Source=(local)" + ";Initial Catalog=QuanLyCuaHangMyPham"
                         + ";Persist Security Info=True;User ID=" + user + ";Password=" + pass;
             SqlConnection conn = new SqlConnection(connString);
                
@@ -29,7 +29,7 @@ namespace ProjFinally
         string conStr;
         public DBConnection()
         {
-            conStr = "Data Source=DESKTOP-6V6IGLT\\SQLEXPRESS;Initial Catalog=QuanLyCuaHangMyPham4;Integrated Security=True";
+            conStr = "Data Source=(local);Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
 
         }
 

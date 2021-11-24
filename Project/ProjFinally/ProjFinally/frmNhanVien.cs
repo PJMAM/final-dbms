@@ -18,7 +18,7 @@ namespace ProjFinally
         int role = 1;
         SqlConnection myConn = null;
         bool Them = false;
-        string strConnectionString = "Data Source=DESKTOP-QEN4LJI\\SQL_SERVER_PJ;Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
+        string strConnectionString = "Data Source=(local);Initial Catalog=QuanLyCuaHangMyPham;Integrated Security=True";
         public frmNhanVien(string name,string pass,int role)
         {
             this.role = role;

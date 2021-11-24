@@ -16,7 +16,7 @@ namespace ProjFinally
     {
         string name = "", pass = "";
         int role = 1;
-        string strConnectionString = "Data Source=DESKTOP-QEN4LJI\\SQL_SERVER_PJ;" +
+        string strConnectionString = "Data Source=(local);" +
             "Initial Catalog=QuanLyCuaHangMyPham;" +
             "Integrated Security=True";
 

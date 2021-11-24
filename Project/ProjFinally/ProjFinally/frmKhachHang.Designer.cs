@@ -37,6 +37,10 @@ namespace ProjFinally
             this.btnReLoad = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT_KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtDienThoai = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -46,10 +50,7 @@ namespace ProjFinally
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT_KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLichSu = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -57,6 +58,7 @@ namespace ProjFinally
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnLichSu);
             this.groupBox2.Controls.Add(this.btnHuy);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnSua);
@@ -147,7 +149,7 @@ namespace ProjFinally
             this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.Red;
-            this.btnThoat.Location = new System.Drawing.Point(807, 280);
+            this.btnThoat.Location = new System.Drawing.Point(992, 280);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(135, 46);
@@ -171,6 +173,39 @@ namespace ProjFinally
             this.dgvKhachHang.Size = new System.Drawing.Size(1169, 240);
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellClick);
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.Frozen = true;
+            this.MaKH.HeaderText = "Mã khách hàng";
+            this.MaKH.MinimumWidth = 6;
+            this.MaKH.Name = "MaKH";
+            this.MaKH.Width = 300;
+            // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "TenKH";
+            this.TenKH.HeaderText = "Tên khách hàng";
+            this.TenKH.MinimumWidth = 6;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Width = 300;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 175;
+            // 
+            // SDT_KH
+            // 
+            this.SDT_KH.DataPropertyName = "SDT_KH";
+            this.SDT_KH.HeaderText = "Số điện thoại";
+            this.SDT_KH.MinimumWidth = 6;
+            this.SDT_KH.Name = "SDT_KH";
+            this.SDT_KH.Width = 300;
             // 
             // groupBox1
             // 
@@ -258,38 +293,19 @@ namespace ProjFinally
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã khách hàng:";
             // 
-            // MaKH
+            // btnLichSu
             // 
-            this.MaKH.DataPropertyName = "MaKH";
-            this.MaKH.Frozen = true;
-            this.MaKH.HeaderText = "Mã khách hàng";
-            this.MaKH.MinimumWidth = 6;
-            this.MaKH.Name = "MaKH";
-            this.MaKH.Width = 300;
-            // 
-            // TenKH
-            // 
-            this.TenKH.DataPropertyName = "TenKH";
-            this.TenKH.HeaderText = "Tên khách hàng";
-            this.TenKH.MinimumWidth = 6;
-            this.TenKH.Name = "TenKH";
-            this.TenKH.Width = 300;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 175;
-            // 
-            // SDT_KH
-            // 
-            this.SDT_KH.DataPropertyName = "SDT_KH";
-            this.SDT_KH.HeaderText = "Số điện thoại";
-            this.SDT_KH.MinimumWidth = 6;
-            this.SDT_KH.Name = "SDT_KH";
-            this.SDT_KH.Width = 300;
+            this.btnLichSu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnLichSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLichSu.Location = new System.Drawing.Point(836, 280);
+            this.btnLichSu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLichSu.Name = "btnLichSu";
+            this.btnLichSu.Size = new System.Drawing.Size(117, 46);
+            this.btnLichSu.TabIndex = 34;
+            this.btnLichSu.Text = "Lịch Sử";
+            this.btnLichSu.UseVisualStyleBackColor = false;
+            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
             // 
             // frmKhachHang
             // 
@@ -331,5 +347,6 @@ namespace ProjFinally
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT_KH;
+        private System.Windows.Forms.Button btnLichSu;
     }
 }
