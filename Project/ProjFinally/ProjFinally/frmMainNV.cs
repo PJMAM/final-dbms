@@ -119,5 +119,17 @@ namespace ProjFinally
             Form fm = new frmBAOCAO(this.name, this.pass, this.role);
             fm.Show();
         }
+
+        private void frmMainNV_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thốngKêBáoCáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form fm = new frmThongKe(this.name, this.pass, this.role);
+            fm.Show();
+        }
     }
 }
